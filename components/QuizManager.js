@@ -1,4 +1,4 @@
-import { birdsData } from "../../assets/db/data.js";
+import { birdsData } from "../assets/db/data.js";
 import { AudioPlayer } from "./AudioPlayer.js";
 import { UIUpdater } from "./UIUpdater.js";
 
@@ -16,17 +16,13 @@ export class QuizManager {
     }
 
     initQuestion() {
+        const playButton = document.querySelector('.play-button');
         const categoryBird = birdsData[this.currentCategory];
         const randomNumber = Math.floor(Math.random() * categoryBird.length);
         this.currentBird = categoryBird[randomNumber];
-
         this.uiUpdater.updateBirdList(categoryBird);
 
-        if (this.currentBird.audio) {
-            this.audioPlayer.toggleAudio({ dataset: { audio: this.currentBird.audio } });
-        }else {
-            alert('Bunday qush ovozi yoq' )
-        }
+        playButton.dataset.audio = this.currentBird.audio;
 
         console.log(this.currentBird);
     }
