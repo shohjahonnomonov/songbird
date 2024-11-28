@@ -67,6 +67,23 @@ nav li {
     font-size: 0.9rem;
 }
 
+.start-page h1{
+    margin-left: 380px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+} 
+.start-page p{
+    margin-left: 420px;
+    margin-bottom: 20px;
+}
+.start-page .start-button{
+    margin-left: 500px;
+    background: linear-gradient(90deg, rgba(0,31,36,1) 0%, rgba(0,255,188,1) 40%, rgba(0,255,188,1) 53%, rgba(0,212,255,1) 95%);
+    color: var(--color-background);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 main {
     padding: 1rem;
 }
@@ -78,6 +95,12 @@ main {
     display: flex;
     gap: 20px;
     margin-bottom: 1rem;
+}
+.mysteryBirdSpecies{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+    color: #888;
 }
 
 .mystery-bottom {
@@ -95,11 +118,19 @@ main {
     display: flex;
     align-items: center;
 }
+.audio-player .play-btn{
+    padding:8px 10px 8px 12px ;
+    border-radius:50%;
+    border: none;
+    color: var(--color-background);
+    background: linear-gradient(90deg, rgba(0,31,36,1) 0%, rgba(189,255,0,1) 43%, rgba(0,212,255,1) 95%);
+
+}
 
 .play-button {
-    background-color: var(--color-primary);
+    background: linear-gradient(90deg, rgba(0,31,36,1) 0%, rgba(189,255,0,1) 43%, rgba(0,212,255,1) 95%);
     border: none;
-    color: var(--color-text);
+    color: var(--color-background);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
